@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Giuseppe Milazzo - Personal Research Page</title>
+    <style>
+        /* General Styles */
+        :root {
+            --primary-color: #2c3e50; /* Academic Navy Blue */
+            --text-color: #333333;
+            --light-bg: #f8f9fa;
+            --accent-color: #3498db;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header / Profile Section */
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--light-bg);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #ddd; /* Placeholder if no image is uploaded */
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.2rem;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin: 5px 0 15px 0;
+        }
+
+        .useful-links a {
+            margin: 0 10px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .useful-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            font-size: 1.5rem;
+        }
+
+        /* Lists & Publications */
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .pub-links {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        .pub-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        /* CV Button */
+        .btn-cv {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-cv:hover {
+            background-color: #1a252f;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #95a5a6;
+            border-top: 1px solid var(--light-bg);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- HEADER: Personal Info & Contact -->
+        <header>
+            <!-- If you have a profile picture, name the file 'profile-pic.jpg', otherwise it will hide itself -->
+            <img src="profile-pic.jpg" alt="Name Surname" class="profile-img" onerror="this.style.display='none'">
+            <h1>Dr. Name Surname</h1>
+            <p class="title">Postdoctoral Researcher in [Your Field] <br> University / Research Institute of [City]</p>
+            
+            <div class="useful-links">
+                <a href="mailto:your.email@institution.edu">Email</a> | 
+                <a href="https://scholar.google.com" target="_blank">Google Scholar</a> | 
+                <a href="https://orcid.org" target="_blank">ORCID</a> | 
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- SECTION 1: Bio & Research Interests -->
+        <section id="about">
+            <h2>Biography & Research Interests</h2>
+            <p>
+                I am a researcher at the University of XYZ. My research primary focuses on <strong>[Insert main topic]</strong>, with a specific interest in [Sub-topic 1], [Sub-topic 2], and their applications in [Application domain].
+            </p>
+            <p>
+                Currently, I am involved in the project "[Project Name]" which aims to address the challenges related to...
+            </p>
+        </section>
+
+        <!-- SECTION 2: Selected Publications -->
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            <ul>
+                <!-- Publication 1 -->
+                <li>
+                    <strong>Surname, N.</strong>, Smith, A., & Jones, C. (2025). <br>
+                    <em>"The title of your most significant journal paper"</em>. <br>
+                    <strong>Journal of Academic Research</strong>, 45(2), 112-125.
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.xxxx/xxxxx" target="_blank">[DOI Link]</a>
+                        <a href="#" target="_blank">[Preprint PDF]</a>
+                    </div>
+                </li>
+
+                <!-- Publication 2 -->
+                <li>
+                    Brown, G., & <strong>Surname, N.</strong> (2024). <br>
+                    <em>"Another relevant paper presented at a conference"</em>. <br>
+                    Proceedings of the International Conference on Science, 12-18.
+                    <div class="pub-links">
+                        <a href="https://doi.org/10.xxxx/xxxxx" target="_blank">[DOI Link]</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECTION 3: Timeline / CV Summary -->
+        <section id="cv">
+            <h2>Professional Experience & Education</h2>
+            <ul>
+                <li><strong>2024 - Present:</strong> Postdoctoral Fellow | University of XYZ</li>
+                <li><strong>2021 - 2024:</strong> Ph.D. in [Your Field] | University of ABC</li>
+                <li><strong>2019 - 2021:</strong> M.Sc. in [Your Field] | University of DEF</li>
+            </ul>
+            <br>
+            <!-- Link to the CV PDF -->
+            <a href="cv.pdf" class="btn-cv" target="_blank">Download Full CV (PDF)</a>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2026 Name Surname. Proudly hosted on GitHub Pages.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
